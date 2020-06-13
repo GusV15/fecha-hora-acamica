@@ -3,9 +3,8 @@ import "./App.css";
 
 export default function App() {
   const [timeCurrent, setTimeCurrent] = useState({
-    seconds: "",
-    minutes: "",
-    hours: ""
+    date: "",
+    hour: ""
   });
 
   setTimeout(() => {

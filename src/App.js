@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const now = new Date();
+  const seconds = now.getSeconds();
+  const minutes = now.getMinutes();
+  const hours = now.getHours();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Practica guiada:</h1>
+      <h2>¡Realicemos un reloj!</h2>
+      <div className="clock">
+        <h2>
+          {hours}:{minutes}:{seconds}
+        </h2>
+      </div>
+      <p>
+        Hasta ahora, este componente toma la hora del broswer para renderizarla.
+      </p>
+      <p>
+        ¿Que cambios debemos hacer en este componente para poder modificar la
+        hora, segundo a segundo?
+      </p>
     </div>
   );
 }

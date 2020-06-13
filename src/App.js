@@ -13,18 +13,18 @@ export default function App() {
     const hour = now.toLocaleTimeString();
     setTimeCurrent({
       date,
-      hours
+      hour
     });
   }, 1000);
 
-  const { date, hours } = timeCurrent;
+  const { date, hour } = timeCurrent;
 
   return (
     <div className="App">
       <h1>Fecha y Hora</h1>
       <div className="clock">
         <h2>{date}</h2>
-        <h2>{hours}</h2>
+        <h2>{hour}</h2>
       </div>
     </div>
   );

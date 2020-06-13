@@ -1,16 +1,35 @@
+html, body {
+  height: 650px;
+  background-color: rgb(18, 56, 44);
+}
+
 .App {
   font-family: sans-serif;
+  line-height: 200px;
   text-align: center;
+  color: rgb(120, 197, 174);
 }
 
 .clock {
   font-family: "Arial black";
   font-size: 40px;
-  color: rgb(120, 197, 174);
-  background-color: rgb(22, 37, 30);
+  background-color: rgb(29, 56, 43);
   padding: 30px;
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
   border-radius: 40px;
   box-shadow: -5px 8px 6px -7px rgba(17, 11, 11, 0.69);
+}
+
+h1{
+  color: rgb(120, 197, 174);
+  font-size: 4em;
+  letter-spacing: -0.02em;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 1em;
+  font-weight: bolder;
 }

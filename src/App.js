@@ -10,26 +10,22 @@ export default function App() {
 
   setTimeout(() => {
     const now = new Date();
-    const seconds = now.getSeconds();
-    const minutes = now.getMinutes();
-    const hours = now.getHours();
-
+    const date = now.toLocaleDateString();
+    const hour = now.toLocaleTimeString();
     setTimeCurrent({
-      seconds: String(seconds).length === 1 ? `0${seconds}` : seconds,
-      minutes,
-      hours: String(hours).length === 1 ? `0${hours}` : hours
+      date,
+      hour
     });
   }, 1000);
 
-  const { hours, minutes, seconds } = timeCurrent;
+  const { date, hour } = timeCurrent;
 
   return (
     <div className="App">
-      <h2>Fecha y Hora</h2>
+      <h1>Fecha y Hora</h1>
       <div className="clock">
-        <h2>
-          {hours}:{minutes}:{seconds}
-        </h2>
+        <h2>{date}</h2>
+        <h2>{hour}</h2>
       </div>
     </div>
   );
